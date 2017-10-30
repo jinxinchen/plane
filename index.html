@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body data-status="index">
+	<canvas id="game"></canvas>
+	<div class="ui-index">
+		<h1>飞机大作战</h1>
+		<div class="btn-group">
+			<button class="js-start btn">开始游戏</button>
+			<button class="js-setting btn">游戏设置</button>
+			<button class="js-rule btn">游戏说明</button>
+		</div>
+	</div>
+	<div class="ui-rule ui-panel">
+		<h2>游戏说明</h2>
+		<p>通过手指移动飞机,躲避敌人。。。</p>
+		<button class="js-conform-rule">我知道了</button>
+	</div>
+	<div class="ui-setting ui-panel">
+		<h2>游戏设置</h2>
+		<ul class="setting-group">
+			<li class="setting">
+				<span>音乐设置</span>
+				<select name="" id="">
+					<option value="0">开启音乐</option><option value="0">关闭音乐</option>
+				</select>
+			</li>
+			<li class="setting">
+				<span>背景设置</span>
+				<select name="bg" id="bg">
+					<option value="0">背景1</option><option value="1">背景2</option>
+				</select>
+			</li>
+			<li class="setting">
+				<span>战机设置</span>
+				<select name="plane" id="plane">
+					<option value="0">粉丝战机</option><option value="1">蓝色战机</option>
+				</select>
+			</li>
+		</ul>
+		<button class="js-conform-setting">确认设置</button>
+	</div>
+
+	<!-- 游戏结束 -->
+	<div class="ui-end ui-panel">
+		<h2>游戏结束</h2>
+		<p id="score">您的分数：</p>
+		<button class="js-conform-again">重玩</button>
+		<button class="js-conform-end">返回</button>
+	</div>
+	
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="js/config.js"></script>
+	<script src="js/resource.js"></script>
+	<script src="js/element.js"></script>
+	<script src="js/enemy.js"></script>
+	<script src="js/plane.js"></script>
+	<script src="js/bullet.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
